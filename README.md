@@ -6,17 +6,19 @@ This is a project that will migrate UFC NFTs from Flow to Aptos
 
 ### Creating a Flow Testnet Account
 
-1. Create a new Flow testnet account:
+1. Install [Flow CLI](https://developers.flow.com/tools/flow-cli/install)
+
+2. Create a new Flow testnet account:
    ```
    flow accounts create --network=testnet
    ```
 
-2. Fund your testnet account:
+3. Fund your testnet account:
    - Go to the Flow Faucet: https://testnet-faucet.onflow.org/
    - Enter your testnet account address
    - Click "Fund Account" to receive free test FLOW tokens
 
-3. Configure your account in `flow.json`:
+4. Configure your account in `flow.json`:
    ```
    flow config add account <account-name> --network=testnet --address <account-address> --key <account-private-key>
    ```
